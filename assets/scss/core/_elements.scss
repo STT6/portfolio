@@ -1,0 +1,20 @@
+// Special elements
+
+// General content container
+.content-title,
+.content-container {
+	@extend .col-md-10;
+	@extend .col-lg-9;
+	@extend .col-xl-8;
+	@extend .mx-md-auto;
+
+	figure {
+		img {
+			@extend .img-fluid;
+		}
+	}
+
+	table {
+		width: 100%;
+	}
+}

@@ -1,0 +1,73 @@
+/*
+FormKit bootstrap theme helper. These classes take care that FormKit's forms look like Bootstrap once all variables are set.
+ */
+.form-wrapper {
+	@extend .row;
+}
+
+.formkit-inner {
+	position: relative;
+
+	&.has-suffix,
+	&.password-reveal {
+		position: relative;
+
+		input {
+			padding-right: 2.5rem;
+		}
+
+		.formkit-suffix,
+		.formkit-suffix-icon {
+			position: absolute;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			right: 0;
+			height: $input-height;
+			width: 2.5rem;
+			top: 0;
+			cursor: pointer;
+
+			svg {
+				width: 1.5rem;
+			}
+		}
+
+		.formkit-suffix {
+			cursor: default;
+		}
+	}
+}
+
+.radio-wrapper,
+.checkbox-wrapper, {
+	display: flex;
+
+	.checkbox-label,
+	.radio-label {
+		margin-left: 0.5rem;
+	}
+}
+
+.formkit-message {
+	&.is-invalid {
+		color: $danger;
+	}
+}
+
+.formkit-input {
+	[data-invalid="true"] & {
+		border-color: $danger;
+	}
+}
+
+.formkit-options {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	.form-check-inline & {
+		display: flex;
+		gap: 1rem;
+	}
+}

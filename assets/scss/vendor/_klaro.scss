@@ -1,0 +1,158 @@
+#klaro {
+	.klaro {
+		a {
+			color: $body-color;
+		}
+
+		.cookie-notice {
+			background-color: white;
+			border-radius: 0;
+			box-shadow: 0 16px 24px rgba(black, 0.08);
+
+			.cn-body {
+				padding: .75rem 1.5rem 1.5rem;
+
+				p {
+					@include font-size(1rem);
+
+					line-height: 1.5;
+					color: $body-color;
+					margin-bottom: 1rem;
+
+					strong {
+						color: $body-color;
+					}
+				}
+			}
+		}
+
+		.cn-ok {
+			align-items: flex-end;
+
+			.cm-btn-info {
+				@extend .btn;
+				@extend .btn-sm;
+				@extend .btn-primary;
+
+				margin-right: 0;
+				flex: 0 0 auto;
+
+				@include font-size(.75rem);
+
+				border-radius: 0;
+				padding: 0.5rem 1rem;
+			}
+
+			.cm-link {
+				@extend .btn;
+				@extend .btn-sm;
+				@extend .btn-primary;
+
+				margin-right: 0;
+				order: 2;
+				flex: 0 0 auto;
+
+				@include font-size(.75rem);
+
+				border-radius: 0;
+				padding: 0.5rem 1rem;
+			}
+
+			.cn-buttons {
+				order: 1;
+				margin-top: 0;
+
+				button {
+					@extend .btn;
+					@extend .btn-sm;
+					@extend .btn-primary;
+					@include font-size(.75rem);
+
+					border-radius: 0;
+					padding: 0.5rem 1rem;
+				}
+			}
+		}
+
+		.cookie-modal {
+			&-notice {
+				position: absolute;
+				transform: none;
+				padding: 0;
+				right: 1rem;
+				bottom: 1rem;
+				top: auto;
+			}
+
+			.cm-modal {
+				background: white;
+				border-radius: 0;
+
+				.hide {
+					svg {
+						stroke: $body-color;
+					}
+				}
+
+				.cm-header {
+					border-bottom: 1px solid $border-color;
+				}
+
+				.cm-footer {
+					border-top: 1px solid $border-color;
+
+					&-buttons {
+						button {
+							@extend .btn;
+							@extend .btn-primary;
+						}
+					}
+
+					.cm-powered-by {
+						display: none;
+					}
+				}
+
+				.cm-header,
+				.cm-body,
+				.cm-footer {
+					padding: 1.5rem;
+
+					.title {
+						font-family: $font-family-base;
+						color: $body-color;
+					}
+
+					p {
+						@include font-size(1rem);
+
+						line-height: 1.5;
+						color: $body-color;
+						margin-bottom: 1rem;
+
+						strong {
+							color: $body-color;
+						}
+					}
+
+					.cm-purposes {
+						.cm-list-input:checked {
+							& + .cm-list-label .slider {
+								background-color: $primary;
+							}
+						}
+
+						.cm-list-title {
+							color: $black;
+							margin-top: .375rem;
+						}
+					}
+				}
+			}
+
+			.cm-list-input.only-required + .cm-list-label .slider {
+				background-color: $primary;
+			}
+		}
+	}
+}

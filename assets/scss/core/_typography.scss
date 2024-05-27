@@ -1,0 +1,57 @@
+// Special typography overrides
+
+h1,
+.h1 {
+	@include font-size($h1-font-size);
+
+	margin-bottom: 2.5rem;
+}
+
+h2,
+.h2 {
+	@include font-size($h2-font-size);
+
+	margin-bottom: 2rem;
+}
+
+h3,
+.h3 {
+	@include font-size($h3-font-size);
+
+	margin-bottom: 2rem;
+}
+
+h4,
+.h4 {
+	@include font-size($h4-font-size);
+
+	margin-bottom: 1.25rem;
+}
+
+h5,
+.h5 {
+	@include font-size($h5-font-size);
+
+	margin-bottom: .75rem;
+}
+
+h6,
+.h6 {
+	@include font-size($h6-font-size);
+
+	margin-bottom: .5rem;
+}
+
+p {
+	@include font-size(1rem);
+
+	margin-bottom: 1.6rem;
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 1.2rem;
+	}
+
+	&.lead {
+		@include font-size($lead-font-size);
+	}
+}

@@ -1,0 +1,25 @@
+// Bootstrap overrides - any overriding of Bootstrap classes due to either non-existing variable or simply extending class
+p {
+	@include font-size(1.25rem);
+}
+
+.btn {
+	&-plain {
+		padding: 0;
+		border: 0;
+	}
+}
+
+.container-fluid {
+	max-width: $container-max-width;
+}
+
+// Forms
+.form-group {
+	display: block;
+	margin-bottom: 1.5rem;
+}
+
+textarea.form-control {
+	min-height: 8rem;
+}
