@@ -44,6 +44,7 @@
         display: flex;
         justify-content: flex-end;
         align-self: center;
+        gap: 2rem;
     }
 
     .links {
@@ -88,6 +89,7 @@ video {
 }
 
 .logos-row {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -104,6 +106,12 @@ video {
     padding-bottom: 5rem;
     @include font-size(2rem);
     font-weight: bold;
+}
+
+.logos-2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .text-above-logos-2 {
@@ -127,31 +135,7 @@ video {
     color: white;
     @include font-size(2rem);
     line-height: 1.5;
-    margin-top: 5rem;
 }
-
-// .cube {
-//     overflow: hidden;
-//     padding-bottom: 10rem;
-
-//     .text-cube {
-//         margin-top: 10rem;
-//         font-weight: bold;
-//         color: white;
-//         @include font-size(3.5rem);
-//         line-height: 1.5;
-
-//     }
-
-//     .text-cube-360 {
-//         align-items: center;
-//         font-weight: bold;
-//         color: white;
-//         @include font-size(15rem);
-//         line-height: 1.5;
-//         justify-content: flex-end;
-//     }
-// }
 
 @include media-breakpoint-down(lg) {
     #scene {
@@ -227,7 +211,6 @@ video {
     }
 
     .face {
-        // border: 2px solid white;
         color: white;
         display: flex;
         position: absolute;
@@ -289,7 +272,6 @@ video {
 
 .cookies {
     color: white;
-    background-color: black;
     padding-top: 3rem;
     padding-bottom: 5rem;
 
@@ -304,6 +286,10 @@ video {
 
     div {
         @include font-size(1rem);
-        padding-bottom: 5rem;
     }
+}
+
+.title {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
 }

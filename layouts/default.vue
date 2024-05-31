@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import CookiesConsent from '@/components/Common/CookiesConsent.vue'
 </script>
 
 <template>
@@ -8,5 +7,4 @@ import CookiesConsent from '@/components/Common/CookiesConsent.vue'
 		<slot />
 		<AppFooter />
 	</div>
-	<CookiesConsent />
 </template>

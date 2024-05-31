@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import gsap from 'gsap'
-import { SplitText } from 'gsap/SplitText'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 onMounted(() => {

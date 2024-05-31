@@ -9,15 +9,16 @@ onMounted(() => {
 	gsap.registerPlugin(SplitText)
 	gsap.registerPlugin(ScrollTrigger)
 
-	const split = ref()
+	// const split = ref()
 	const splitLogos = ref()
 	const splitLogos2 = ref()
 	const splitParagraph = ref()
 
 	if (textRef.value) {
-		split.value = new SplitText('.main-text', {
-			type: 'words'
-		})
+		// Commented out the animation for .main-text
+		// split.value = new SplitText('.main-text', {
+		// 	type: 'words'
+		// })
 
 		splitLogos.value = new SplitText('.text-above-logos', {
 			type: 'words'
@@ -31,26 +32,27 @@ onMounted(() => {
 			type: 'lines'
 		})
 
-		ScrollTrigger.create({
-			trigger: '.main-text',
-			start: 'top bottom',
-			end: 'bottom+=200 bottom',
-			scrub: true,
-			animation: gsap.fromTo(
-				split.value.words,
-				{
-					opacity: 0,
-					y: 200
-				},
-				{
-					opacity: 1,
-					y: 0,
-					stagger: 0.1,
-					easing: 'power4.easeOut',
-					duration: 2
-				}
-			)
-		})
+		// Removed the ScrollTrigger animation for .main-text
+		// ScrollTrigger.create({
+		// 	trigger: '.main-text',
+		// 	start: 'top bottom',
+		// 	end: 'bottom+=200 bottom',
+		// 	scrub: true,
+		// 	animation: gsap.fromTo(
+		// 		split.value.words,
+		// 		{
+		// 			opacity: 0,
+		// 			y: 200
+		// 		},
+		// 		{
+		// 			opacity: 1,
+		// 			y: 0,
+		// 			stagger: 0.1,
+		// 			easing: 'power4.easeOut',
+		// 			duration: 2
+		// 		}
+		// 	)
+		// })
 
 		function animateLogos (target: string, trigger: string) {
 			gsap.fromTo(
@@ -174,23 +176,13 @@ onMounted(() => {
 
 <template>
 	<section>
-		<section class="hero text-center">
-			<div class="video">
-				<video controls>
-					<source src="../images/intro-u-invest.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div>
-		</section>
-
 		<section>
-			<div class="container">
+			<div class="container mt-5">
 				<div class="row justify-content-center">
 					<div class="col-8">
 						<div class="main-text text-center">
-							<h3 ref="textRef" class="main-text">
-								Reinventing your wealth through strategic
-								investments.
+							<h3 ref="textRef" class="main-text title">
+								Hi! I'm Miha, a passionate front-end developer dedicated to creating engaging and user-friendly websites.
 							</h3>
 						</div>
 					</div>
@@ -198,7 +190,7 @@ onMounted(() => {
 			</div>
 		</section>
 
-		<section>
+		<!-- <section>
 			<div class="container">
 				<div class="row logos-1">
 					<div class="text-above-logos">
@@ -310,40 +302,130 @@ onMounted(() => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section id="#about-us">
 			<div class="container">
 				<div class="row">
-					<h5 id="about-us" class="col-12 col-lg-4 text-paragraph">
-						We are an investment company committed to integrity,
-						partnership, results, success, and innovation. Our goal is
-						to be the top investment company in the Slovenia region,
-						with a complete ecosystem for guaranteed success.
+					<h5 id="about-us" class="col-12 col-lg-5 text-paragraph">
+						I am an intermediate Vue Developer with a strong frontend development background and a good grasp of React. Proficient in Vue.js and its ecosystem, including state management, component-based architecture, and RESTful API integration. Skilled in creating dynamic, user-friendly web applications, enhancing user experiences, and optimizing performance. Experienced with GitHub, GitLab, and Figma.
 					</h5>
 				</div>
 			</div>
 		</section>
 
-		<!-- <section class="cube">
-		<div class="container">
-			<div class="row mobile">
-				<h5 class="d-flex col-auto text-cube-360">
-					360
-				</h5>
-				<h5 class="col-auto text-cube">
-					We are innovators
-					in creating and
-					maximizing
-					investments through
-					a 360 investment
-					ecosystem
-					approach.
-				</h5>
+		<section class="pb-5">
+			<div class="container">
+				<div class="row logos-1">
+					<div class="text-above-logos">
+						Skills
+					</div>
+					<div
+						class="col-6 col-lg-3 d-flex justify-content-center align-items-center text-paragraph"
+						style="
+						translate: none;
+						rotate: none;
+						scale: none;
+						transform: translate3d(0px, 0.6493px, 0px);
+						opacity: 0.9935;
+					"
+					>
+						JAVASCRIPT
+					</div>
+					<div
+						class="col-6 col-lg-3 d-flex justify-content-center align-items-center text-paragraph"
+						style="
+						translate: none;
+						rotate: none;
+						scale: none;
+						transform: translate3d(0px, 2.178px, 0px);
+						opacity: 0.9782;
+					"
+					>
+						TYPESCRIPT
+					</div>
+					<div
+						class="col-6 col-lg-3 d-flex justify-content-center align-items-center text-paragraph"
+						style="
+						translate: none;
+						rotate: none;
+						scale: none;
+						transform: translate3d(0px, 5.7663px, 0px);
+						opacity: 0.9423;
+					"
+					>
+						HTML
+					</div>
+					<div
+						class="col-6 col-lg-3 d-flex justify-content-center align-items-center text-paragraph"
+						style="
+						translate: none;
+						rotate: none;
+						scale: none;
+						transform: translate3d(0px, 13.0215px, 0px);
+						opacity: 0.8698;
+					"
+					>
+						CSS
+					</div>
+				</div>
+
+				<div class="line" />
+
+				<div class="row logos-2">
+					<!-- <div
+						class="col-6 col-lg-3 d-flex justify-content-center align-items-center logos-2 text-paragraph"
+						style="
+						translate: none;
+						rotate: none;
+						scale: none;
+						transform: translate3d(0px, 0.6493px, 0px);
+						opacity: 0.9935;
+					"
+					>
+						YEET
+					</div> -->
+					<div
+						class="col-6 col-lg-3 d-flex justify-content-center align-items-center text-paragraph"
+						style="
+						translate: none;
+						rotate: none;
+						scale: none;
+						transform: translate3d(0px, 2.178px, 0px);
+						opacity: 0.9782;
+					"
+					>
+						C++
+					</div>
+					<div
+						class="col-6 col-lg-3 d-flex justify-content-center align-items-center text-paragraph"
+						style="
+						translate: none;
+						rotate: none;
+						scale: none;
+						transform: translate3d(0px, 5.7663px, 0px);
+						opacity: 0.9423;
+					"
+					>
+						C#
+					</div>
+					<div
+						class="col-6 col-lg-3 d-flex justify-content-center align-items-center text-paragraph"
+						style="
+						translate: none;
+						rotate: none;
+						scale: none;
+						transform: translate3d(0px, 13.0215px, 0px);
+						opacity: 0.8698;
+					"
+					>
+						PYTHON
+					</div>
+				</div>
 			</div>
-		</div>
-	</section> -->
-		<div class="section">
+		</section>
+
+		<!-- <div class="section">
 			<div class="container">
 				<div id="scene">
 					<div class="cube1">
@@ -357,9 +439,9 @@ onMounted(() => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<section id="get-in-touch">
+		<!-- <section id="get-in-touch">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-10 col-lg-8">
@@ -374,6 +456,6 @@ onMounted(() => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 	</section>
 </template>

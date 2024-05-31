@@ -1,19 +1,7 @@
 {
-	"extends": [
-		"stylelint-config-standard-scss",
-		"stylelint-stylistic/config",
-		"stylelint-config-recommended-vue"
-	],
+	"extends": "stylelint-config-standard",
 	"rules": {
-		"stylistic/indentation": "tab",
-		"stylistic/number-leading-zero": null,
-		"stylistic/max-empty-lines": null,
-		"stylistic/max-line-length": null,
-		"no-descending-specificity": null,
-		"selector-class-pattern": "^([a-z][a-z0-9]*)(-*[a-z0-9]+)*$",
-		"scss/dollar-variable-colon-space-after": null,
-		"scss/at-extend-no-missing-placeholder": null,
-		"scss/comment-no-empty": null,
-		"color-function-notation": null
+	  "length-zero-no-unit": true,
+	  "no-eol-whitespace": true
 	}
-}
+  }
