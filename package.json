@@ -6,13 +6,15 @@
 		"dev": "nuxt dev --host",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare"
+		"postinstall": "nuxt prepare",
+		"deploy": "gh-pages -d dist"
 	},
 	"devDependencies": {
 		"@nuxtjs/eslint-config-typescript": "^12.0.0",
 		"@nuxtjs/eslint-module": "^4.1.0",
 		"@nuxtjs/stylelint-module": "^5.1.0",
 		"eslint": "^8.45.0",
+		"gh-pages": "^6.1.1",
 		"nuxt": "^3.7.3",
 		"postcss-html": "^1.5.0",
 		"sass": "^1.64.1",

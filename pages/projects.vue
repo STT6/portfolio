@@ -2,7 +2,7 @@
 	<div class="cookies">
 		<div class="container">
 			<div class="row">
-				<h1>Projects</h1>
+				<h1>My projects</h1>
 				<h2>
 					AC Control System for Server Room
 				</h2>

@@ -15,9 +15,7 @@
 						<div class="footer-line">
 							tel: 031 241 151
 						</div>
-						<div class="footer-line">
-							tel 01 / 2809 161
-						</div>
+						<div class="footer-line" />
 					</div>
 					<div class="col-auto footer-link">
 						<!-- <div class="footer-line">
