@@ -1,0 +1,1 @@
+import{_,a as c}from"./AppFooter.ca8e20a3.js";import{_ as r,o as a,c as s,b as o,J as p}from"./entry.ef458293.js";import"./nuxt-link.cf21155d.js";const m={};function l(e,d){const t=_,n=c;return a(),s("div",null,[o(t),p(e.$slots,"default"),o(n)])}const x=r(m,[["render",l]]);export{x as default};
