@@ -1,4 +1,4 @@
-# Proper Nuxt 3 Template
+<!-- # Proper Nuxt 3 Template
 
 ### Plugins
 - dayjs (date formatting)
@@ -51,4 +51,4 @@ Using **typescript** is recommended!
 
 # One last thing...
 ANY comments and suggestions are very welcome :)
-# portfolio
+# portfolio -->
