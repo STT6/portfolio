@@ -1,0 +1,71 @@
+import { b as buildAssetsURL } from '../../renderer.mjs';
+import { mergeProps, useSSRContext } from 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/vue/index.mjs';
+import { ssrRenderAttrs, ssrRenderAttr } from 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/vue/server-renderer/index.mjs';
+import { _ as _export_sfc } from '../server.mjs';
+import 'node:async_hooks';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/h3/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/devalue/index.js';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/ufo/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@unhead/ssr/dist/index.mjs';
+import '../../nitro/nitro-prerenderer.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/node-fetch-native/dist/polyfill.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/ofetch/dist/node.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/destr/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/hookable/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/scule/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/klona/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/defu/dist/defu.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/ohash/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/unstorage/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/unstorage/drivers/fs.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/unstorage/drivers/memory.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/unstorage/drivers/lru-cache.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/radix3/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/unctx/dist/index.mjs';
+import 'node:fs';
+import 'node:url';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/pathe/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/unhead/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@unhead/shared/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/vue-router/dist/vue-router.node.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/vue-devtools-stub/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@intlify/core-base/dist/core-base.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@intlify/vue-devtools/dist/vue-devtools.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/cookie-es/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/is-https/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@formkit/core/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@formkit/utils/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@formkit/inputs/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@formkit/rules/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@formkit/validation/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@formkit/i18n/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@formkit/themes/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@formkit/observer/dist/index.mjs';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/dayjs/dayjs.min.js';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/dayjs/locale/sl.js';
+import 'file://C:/Programming/Projects/LearningGSAP/portfolio/node_modules/@gtm-support/vue-gtm/dist/index.js';
+
+const _imports_0 = "" + buildAssetsURL("klime1.7a06d59e.png");
+const _imports_1 = "" + buildAssetsURL("klime2.735ba780.png");
+const _imports_2 = "" + buildAssetsURL("klime3.44f94979.png");
+const _imports_3 = "" + buildAssetsURL("klime4.c33e2a56.png");
+const _imports_4 = "" + buildAssetsURL("jub4.61495143.png");
+const _imports_5 = "" + buildAssetsURL("jub2.0adfb245.png");
+const _imports_6 = "" + buildAssetsURL("jub3.06461e1e.png");
+const _sfc_main = {};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: "cookies" }, _attrs))}><div class="container"><div class="row"><h1>My projects</h1><h2> AC Control System for Server Room </h2><div class="col-md-6"><p> This project enables users to control the air conditioning units inside a server control room, ensuring optimal temperature and performance of the servers. </p><h5>My Contributions:</h5><ul><li><strong>Frontend Development:</strong> Designed and developed the entire frontend using Vue.js.</li><li><strong>Functionality:</strong> Implemented key features like adding and managing AC units, user management, and comprehensive user verification.</li><li><strong>API Integration:</strong> Integrated with backend APIs for real-time control and monitoring.</li></ul><h5>Technologies Used:</h5><ul><li><strong>Frontend:</strong> Vue.js</li><li><strong>Backend Integration:</strong> RESTful APIs</li></ul></div><div class="col-6"><div class="row"><div class="col-6 mb-5"><img${ssrRenderAttr("src", _imports_0)} class="img-fluid" alt=""></div><div class="col-6 mb-5"><img${ssrRenderAttr("src", _imports_1)} class="img-fluid" alt=""></div><div class="col-6 mb-5"><img${ssrRenderAttr("src", _imports_2)} class="img-fluid" alt=""></div><div class="col-6 mb-5"><img${ssrRenderAttr("src", _imports_3)} class="img-fluid" alt=""></div></div></div></div><div class="row mt-5"><h2> Employee insights </h2><div class="col-6"><p> This project allows employees to provide feedback to their boss efficiently and effectively. </p><h5>My Contributions:</h5><ul><li><strong>Frontend Development:</strong> Developed the entire frontend using Vue.js, ensuring a seamless and responsive user experience.</li><li><strong>User Interface Design:</strong> Designed a clean and intuitive UI with Vuetify, enhancing usability and accessibility across all devices.</li><li><strong>Core Functionality:</strong> Implemented features such as feedback submission, user management, and a robust verification system.</li><li><strong>API Integration:</strong> Integrated with backend APIs to enable real-time data processing and feedback management.</li></ul><h5>Technologies Used:</h5><ul><li><strong>Frontend:</strong> Vue.js, Vuetify</li><li><strong>Backend Integration:</strong> RESTful APIs</li></ul></div><div class="col-6"><div class="row"><div class="col-6 mb-5"><img${ssrRenderAttr("src", _imports_4)} class="img-fluid" alt=""></div><div class="col-6 mb-5"><img${ssrRenderAttr("src", _imports_5)} class="img-fluid" alt=""></div><div class="col-2"></div><div class="col-8 mb-5 align center"><img${ssrRenderAttr("src", _imports_6)} class="img-fluid" alt=""></div></div></div></div></div></div>`);
+}
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/projects.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const projects = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
+
+export { projects as default };
+//# sourceMappingURL=projects-25d0c077.mjs.map
