@@ -29,7 +29,7 @@
 						</NuxtLink>
 						<NuxtLink to="/projects">
 							<div class="text mt-1 mb-1 btn btn-primary">
-								Projects
+								Projects1
 							</div>
 						</NuxtLink>
 					</div>
