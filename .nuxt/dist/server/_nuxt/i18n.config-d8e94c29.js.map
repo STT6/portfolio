@@ -1,1 +1,0 @@
-{"version":3,"file":"i18n.config-d8e94c29.js","sources":["../../../../i18n.config.ts?hash=98563ad1&config=1"],"sourcesContent":["export default defineI18nConfig(() => ({\r\n\tlegacy: false,\r\n\tlocale: 'sl',\r\n\tfallbackLocale: 'sl'\r\n}))\r\n"],"names":[],"mappings":"AAAA,MAAA;EACC,QAAQ;AAAA,EACR,QAAQ;AAAA,EACR,gBAAgB;AACjB;"}
