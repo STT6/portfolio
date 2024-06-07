@@ -51,4 +51,4 @@ Using **typescript** is recommended!
 
 # One last thing...
 ANY comments and suggestions are very welcome :)
-s
+ss
