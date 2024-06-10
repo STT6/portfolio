@@ -67,7 +67,5 @@ export default defineNuxtConfig({
 		strategy: 'prefix',
 		vueI18n: './i18n.config.ts'
 	},
-	router: {
-		base: '/portfolio/' // Replace 'portfolio' with your GitHub repository name
-	}
+	base: '/portfolio/' // Replace 'portfolio' with your GitHub repository name
 })
