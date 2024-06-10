@@ -19,10 +19,10 @@ export default defineNuxtConfig({
 		}
 	},
 	experimental: {
-		typedPages: true,
-		headNext: true,
-		asyncContext: true,
-		viewTransition: true
+		typedPages: false,
+		headNext: false,
+		asyncContext: false,
+		viewTransition: false
 	},
 	modules: [
 		'@nuxtjs/eslint-module',
